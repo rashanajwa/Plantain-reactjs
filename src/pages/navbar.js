@@ -10,7 +10,12 @@ function Navbar() {
     document.getElementById("cnn-concept-div").scrollIntoView();
   };
   return (
-    <AppBar position="static" color="default" elevation={24}>
+    <AppBar
+      position="static"
+      color="default"
+      elevation={24}
+      style={{ backgroundColor: "#f0f2f5" }}
+    >
       <Toolbar sx={{ flexWrap: "wrap" }}>
         <Typography
           variant="h6"
@@ -27,8 +32,7 @@ function Navbar() {
           <Link
             variant="button"
             color="text.primary"
-            href="#"
-            onClick={onCNNConceptClick}
+            href="/cnn"
             sx={{ my: 1, mx: 1.5 }}
           >
             CNN Concept
@@ -36,7 +40,7 @@ function Navbar() {
           <Link
             variant="button"
             color="text.primary"
-            href="#"
+            href="/plantain"
             sx={{ my: 1, mx: 1.5 }}
           >
             Plantain
@@ -44,7 +48,7 @@ function Navbar() {
           <Link
             variant="button"
             color="text.primary"
-            href="#"
+            href="/dataset"
             sx={{ my: 1, mx: 1.5 }}
           >
             Dataset
@@ -52,7 +56,7 @@ function Navbar() {
           <Link
             variant="button"
             color="text.primary"
-            href="#"
+            href="/references"
             sx={{ my: 1, mx: 1.5 }}
           >
             References

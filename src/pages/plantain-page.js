@@ -5,7 +5,7 @@ import Typography from "@mui/material/Typography";
 import Container from "@mui/material/Container";
 import CNNConceptPage from "./cnn-concept-page";
 
-function HomePage() {
+function PlantainPage() {
   return (
     <React.Fragment>
       <Container
@@ -34,16 +34,8 @@ function HomePage() {
           little customization.
         </Typography>
       </Container>
-
-      {/* CNN concept */}
-      {/* <Box m={2} pt={5}>
-        <Container maxWidth="md" component="main" id="cnn-concept-div">
-          <CNNConceptPage />
-        </Container>
-      </Box> */}
-      {/* CNN concept end */}
     </React.Fragment>
   );
 }
 
-export default HomePage;
+export default PlantainPage;
