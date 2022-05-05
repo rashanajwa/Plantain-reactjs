@@ -1,39 +1,37 @@
 import "../App.css";
 import AppBar from "@mui/material/AppBar";
-import Box from "@mui/material/Box";
 import Button from "@mui/material/Button";
-import Card from "@mui/material/Card";
-import CardActions from "@mui/material/CardActions";
-import CardContent from "@mui/material/CardContent";
-import CardHeader from "@mui/material/CardHeader";
-import CssBaseline from "@mui/material/CssBaseline";
-import Grid from "@mui/material/Grid";
 import Toolbar from "@mui/material/Toolbar";
 import Typography from "@mui/material/Typography";
 import Link from "@mui/material/Link";
-import GlobalStyles from "@mui/material/GlobalStyles";
-import Container from "@mui/material/Container";
 
 function Navbar() {
+  const onCNNConceptClick = () => {
+    document.getElementById("cnn-concept-div").scrollIntoView();
+  };
   return (
-    <AppBar
-      position="static"
-      color="default"
-      elevation={24}
-      sx={{ borderBottom: (theme) => `5px solid ${theme.palette.divider}` }}
-    >
+    <AppBar position="static" color="default" elevation={24}>
       <Toolbar sx={{ flexWrap: "wrap" }}>
-        <Typography variant="h6" color="inherit" noWrap sx={{ flexGrow: 1 }}>
-          Company name
+        <Typography
+          variant="h6"
+          color="inherit"
+          noWrap
+          sx={{ flexGrow: 1, textAlign: "left" }}
+        >
+          Plantain Diseases
         </Typography>
         <nav>
+          <Link variant="button" color="text.primary" sx={{ my: 1, mx: 1.5 }}>
+            Detect
+          </Link>
           <Link
             variant="button"
             color="text.primary"
             href="#"
+            onClick={onCNNConceptClick}
             sx={{ my: 1, mx: 1.5 }}
           >
-            Features
+            CNN Concept
           </Link>
           <Link
             variant="button"
@@ -41,7 +39,7 @@ function Navbar() {
             href="#"
             sx={{ my: 1, mx: 1.5 }}
           >
-            Enterprise
+            Plantain
           </Link>
           <Link
             variant="button"
@@ -49,10 +47,23 @@ function Navbar() {
             href="#"
             sx={{ my: 1, mx: 1.5 }}
           >
-            Support
+            Dataset
+          </Link>
+          <Link
+            variant="button"
+            color="text.primary"
+            href="#"
+            sx={{ my: 1, mx: 1.5 }}
+          >
+            References
           </Link>
         </nav>
-        <Button href="#" variant="outlined" sx={{ my: 1, mx: 1.5 }}>
+        <Button
+          href="#"
+          variant="outlined"
+          sx={{ my: 1, mx: 1.5 }}
+          onClick={onCNNConceptClick}
+        >
           Login
         </Button>
       </Toolbar>
