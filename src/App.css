@@ -27,6 +27,23 @@
 .App-link {
   color: #61dafb;
 }
+.navbar-appname-dive {
+  margin-right: 60px;
+}
+.MuiTypography-button {
+  text-decoration: none !important;
+}
+.MuiTypography-h6 {
+  font-size: 1.7em !important;
+}
+.content-page-container {
+  margin-top: 65px;
+  background-color: rgb(247 247 247);
+  height: 100vh;
+}
+.nav-detect-btn {
+  color: #000 !important;
+}
 
 @keyframes App-logo-spin {
   from {

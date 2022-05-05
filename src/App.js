@@ -16,6 +16,7 @@ import CNNConceptPage from "./pages/cnn-concept-page";
 import DatasetPage from "./pages/dataset-page";
 import PlantainPage from "./pages/plantain-page";
 import ReferencePage from "./pages/references-page";
+import { DetectPage } from "./pages/detect-page";
 
 const RouterList = () => {
   let routes = useRoutes([
@@ -24,6 +25,7 @@ const RouterList = () => {
     { path: "/dataset", element: <DatasetPage /> },
     { path: "/plantain", element: <PlantainPage /> },
     { path: "/references", element: <ReferencePage /> },
+    { path: "/detect/:type", element: <DetectPage /> },
   ]);
   return routes;
 };
@@ -35,11 +37,15 @@ function App() {
         styles={{ ul: { margin: 0, padding: 0, listStyle: "none" } }}
       />
       <CssBaseline />
-      <Navbar />
-      <Router>
-        <RouterList />
-      </Router>
-      <FooterComponent />
+      <div>
+        <Navbar />
+      </div>
+      <div className="content-page-container">
+        <Router>
+          <RouterList />
+        </Router>
+        {/* <FooterComponent /> */}
+      </div>
     </div>
   );
 }
