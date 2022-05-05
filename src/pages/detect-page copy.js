@@ -1,30 +1,33 @@
 import { useState, useEffect } from "react";
-import { makeStyles, withStyles } from "@material-ui/core/styles";
-import AppBar from "@material-ui/core/AppBar";
-import Toolbar from "@material-ui/core/Toolbar";
-import Typography from "@material-ui/core/Typography";
-import Avatar from "@material-ui/core/Avatar";
-import Container from "@material-ui/core/Container";
+
 import React from "react";
-import Card from "@material-ui/core/Card";
-import CardContent from "@material-ui/core/CardContent";
+
+import { DropzoneArea } from "material-ui-dropzone";
+import { common } from "@mui/material/colors";
 import {
-  Paper,
+  AppBar,
+  Avatar,
+  Box,
+  Button,
+  Card,
   CardActionArea,
+  CardContent,
   CardMedia,
+  CircularProgress,
+  Container,
   Grid,
-  TableContainer,
+  Paper,
   Table,
   TableBody,
+  TableCell,
+  TableContainer,
   TableHead,
   TableRow,
-  TableCell,
-  Button,
-  CircularProgress,
-} from "@material-ui/core";
-import { DropzoneArea } from "material-ui-dropzone";
-import { common } from "@material-ui/core/colors";
-import Clear from "@material-ui/icons/Clear";
+  Toolbar,
+  Typography,
+} from "@mui/material";
+import { makeStyles, withStyles } from "@material-ui/styles";
+import { useParams } from "react-router-dom";
 
 const ColorButton = withStyles((theme) => ({
   root: {
@@ -38,9 +41,6 @@ const ColorButton = withStyles((theme) => ({
 const axios = require("axios").default;
 
 const useStyles = makeStyles((theme) => ({
-  grow: {
-    flexGrow: 1,
-  },
   clearButton: {
     width: "-webkit-fill-available",
     borderRadius: "15px",
@@ -57,7 +57,6 @@ const useStyles = makeStyles((theme) => ({
     height: 400,
   },
   paper: {
-    padding: theme.spacing(2),
     margin: "auto",
     maxWidth: 500,
   },
@@ -141,11 +140,7 @@ const useStyles = makeStyles((theme) => ({
     flexDirection: "column",
     alignItems: "center",
   },
-  appbar: {
-    background: "#be6a77",
-    boxShadow: "none",
-    color: "white",
-  },
+
   loader: {
     color: "#be6a77 !important",
   },
@@ -157,15 +152,19 @@ export const DetectPage = () => {
   const [data, setData] = useState();
   const [image, setImage] = useState(false);
   const [isLoading, setIsloading] = useState(false);
+  let { type } = useParams();
+  console.log(type);
   let confidence = 0;
 
   const sendFile = async () => {
     if (image) {
       let formData = new FormData();
       formData.append("file", selectedFile);
+      formData.append("type", type);
       let res = await axios({
         method: "post",
-        url: "https://3a3f-117-254-183-71.in.ngrok.io/predict",
+        // url: "http://localhost:8000/predict",
+        url: "https://be6a-117-254-183-71.in.ngrok.io/predict",
         data: formData,
       });
       if (res.status === 200) {
@@ -222,6 +221,12 @@ export const DetectPage = () => {
         className={classes.mainContainer}
         disableGutters={true}
       >
+        {/* <Box pt={5}>
+          <Typography>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          </Typography>
+        </Box> */}
         <Grid
           className={classes.gridContainer}
           container
@@ -250,9 +255,7 @@ export const DetectPage = () => {
                 <CardContent className={classes.content}>
                   <DropzoneArea
                     acceptedFiles={["image/*"]}
-                    dropzoneText={
-                      "Drag and drop an image of a potato plant leaf to process"
-                    }
+                    dropzoneText={`Drag and drop an image of a plantain ${type} to process`}
                     onChange={onSelectFile}
                   />
                 </CardContent>
@@ -324,7 +327,6 @@ export const DetectPage = () => {
                 component="span"
                 size="large"
                 onClick={clearData}
-                startIcon={<Clear fontSize="large" />}
               >
                 Clear
               </ColorButton>
