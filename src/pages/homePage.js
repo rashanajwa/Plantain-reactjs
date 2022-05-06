@@ -4,8 +4,10 @@ import Box from "@mui/material/Box";
 import Typography from "@mui/material/Typography";
 import Container from "@mui/material/Container";
 import CNNConceptPage from "./cnn-concept-page";
-import Button from '@mui/material/Button';
-import ButtonGroup from '@mui/material/ButtonGroup';
+import Button from "@mui/material/Button";
+import ButtonGroup from "@mui/material/ButtonGroup";
+import HomePageCard from "../components/home-page-card";
+import { Grid } from "@material-ui/core";
 
 function HomePage() {
   return (
@@ -25,39 +27,40 @@ function HomePage() {
         >
           Plantain Doctor
         </Typography>
-        <p><br></br></p>
+        <p>
+          <br></br>
+        </p>
         <Typography color="text.secondary" component="p">
-          We help you to detect various insects and diseases that affects plantain trees.
-          we assure you to provide sufficient cure treatments for the infected plant.
+          We help you to detect various insects and diseases that affects
+          plantain trees. we assure you to provide sufficient cure treatments
+          for the infected plant.
         </Typography>
-        <p><br></br><br></br></p>
+      </Container>
+      <Container disableGutters maxWidth="sm" component="main">
         <Typography
           component="h2"
           variant="h6"
           align="center"
           color="text.secondary"
           gutterBottom
+          sx={{ pt: 5, pb: 5 }}
         >
           All You Have To Do Is...
-
         </Typography>
-        <p><br></br></p>
-        <ButtonGroup variant="contained" aria-label="outlined primary button group" >
-      <Button>Navigate to Detect</Button>
-      <Button>Select a part of the Plant</Button>
-      <Button>Drag and drop your Image</Button>
-    </ButtonGroup>
-    <p><br></br><br></br></p>
-
+        <Box sx={{ flexGrow: 1 }}>
+          <Grid container spacing={1}>
+            <Grid item xs={4} md={4}>
+              <HomePageCard text={"Navigate to Detect"} />
+            </Grid>
+            <Grid item xs={4} md={4}>
+              <HomePageCard text={"Select a part of the Plant"} />
+            </Grid>
+            <Grid item xs={4} md={4}>
+              <HomePageCard text={"Drag and drop your Image"} />
+            </Grid>
+          </Grid>
+        </Box>
       </Container>
-
-      {/* CNN concept */}
-      {/* <Box m={2} pt={5}>
-        <Container maxWidth="md" component="main" id="cnn-concept-div">
-          <CNNConceptPage />
-        </Container>
-      </Box> */}
-      {/* CNN concept end */}
     </React.Fragment>
   );
 }
