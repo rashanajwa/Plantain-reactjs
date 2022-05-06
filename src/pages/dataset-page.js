@@ -4,6 +4,10 @@ import Box from "@mui/material/Box";
 import Typography from "@mui/material/Typography";
 import Container from "@mui/material/Container";
 import CNNConceptPage from "./cnn-concept-page";
+import Card from "@mui/material/Card";
+import CardActions from "@mui/material/CardActions";
+import CardContent from "@mui/material/CardContent";
+import CardMedia from "@mui/material/CardMedia";
 
 function DatasetPage() {
   return (
@@ -21,19 +25,37 @@ function DatasetPage() {
           color="text.primary"
           gutterBottom
         >
-          Pricing
+          Some Of The Datasets
         </Typography>
-        <Typography
-          variant="h5"
-          align="center"
-          color="text.secondary"
-          component="p"
-        >
-          Quickly build an effective pricing table for your potential customers
-          with this layout. It&apos;s built with default MUI components with
-          little customization.
-        </Typography>
+        <Card sx={{}}>
+          <CardMedia
+            component="img"
+            height="300"
+            image="/imgs/earwig1.jpg"
+            alt="green iguana"
+          />
+          <CardContent>Earwigs</CardContent>
+          </Card>
+          <Card sx={{}}>
+          <CardMedia
+            component="img"
+            height="300"
+            image="/imgs/weevils1.jpeg"
+            alt="green iguana"
+          />
+          <CardContent>Weevils</CardContent>
+          </Card>
+          <Card sx={{}}>
+          <CardMedia
+            component="img"
+            height="300"
+            image="/imgs/larva1.jpg"
+            alt="green iguana"
+          />
+          <CardContent>Larva</CardContent>
+          </Card>
       </Container>
+      
     </React.Fragment>
   );
 }

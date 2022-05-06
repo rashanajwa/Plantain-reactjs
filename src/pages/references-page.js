@@ -16,12 +16,12 @@ function ReferencePage() {
       >
         <Typography
           component="h1"
-          variant="h2"
+          variant="h4"
           align="center"
           color="text.primary"
           gutterBottom
         >
-          Pricing
+         References
         </Typography>
         <Typography
           variant="h5"
@@ -29,9 +29,7 @@ function ReferencePage() {
           color="text.secondary"
           component="p"
         >
-          Quickly build an effective pricing table for your potential customers
-          with this layout. It&apos;s built with default MUI components with
-          little customization.
+          https://www.analyticsvidhya.com/blog/2021/03/the-architecture-of-lenet-5/
         </Typography>
       </Container>
     </React.Fragment>

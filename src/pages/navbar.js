@@ -63,7 +63,7 @@ function Navbar() {
             sx={{ flexGrow: 1, textAlign: "left" }}
             onClick={onAppNameClick}
           >
-            Plantain Diseases
+            Plantain Doctor
           </Typography>
         </div>
         <nav>
