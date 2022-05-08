@@ -35,23 +35,88 @@ function DatasetPage() {
           color="text.primary"
           gutterBottom
         >
-          AAAAAAAAAAABBBBBBBBBBBBBBBBCCCCCCCCCCCCCCCCCC
+          A data set (or dataset) is a collection of data. In the case of
+          tabular data, a data set corresponds to one or more database tables,
+          where every column of a table represents a particular variable, and
+          each row corresponds to a given record of the data set in question.
         </Typography>
-
-        <Grid container spacing={2}>
-          <Grid item xs={8}>
-            f
-          </Grid>
-          <Grid item xs={4}>
-          dd
-          </Grid>
-          <Grid item xs={4}>
-          dd
-          </Grid>
-          <Grid item xs={8}>
-           d
-          </Grid>
-        </Grid>
+        {/* INSECT START */}
+        <Card sx={{ backgroundColor: "#c9f583" }}>
+          <CardContent>
+            <Typography gutterBottom variant="h5" component="div">
+              Insects
+            </Typography>
+            <Typography variant="body2" color="text.secondary">
+              Lizards are a widespread group of squamate reptiles, with over
+              6,000 species, ranging across all continents except Antarctica
+            </Typography>
+          </CardContent>
+          <CardContent>
+            <Grid container spacing={2}>
+              <Grid item xs={4}>
+                <Card sx={{}}>
+                  <CardMedia
+                    component="img"
+                    height="140"
+                    image="/imgs/earwig1.jpg"
+                    alt="green iguana"
+                  />
+                  <CardContent>
+                    <Typography gutterBottom variant="h5" component="div">
+                      weevils
+                    </Typography>
+                    <Typography variant="body2" color="text.secondary">
+                      Weevils, also referred to as nunus, are beetles belonging
+                      to the superfamily Curculionoidea, known for their
+                      elongated snouts.
+                    </Typography>
+                  </CardContent>
+                </Card>
+              </Grid>
+              <Grid item xs={4}>
+                <Card sx={{}} color="primary">
+                  <CardMedia
+                    component="img"
+                    height="140"
+                    image="/imgs/earwig1.jpg"
+                    alt="green iguana"
+                  />
+                  <CardContent>
+                    <Typography gutterBottom variant="h5" component="div">
+                      weevils
+                    </Typography>
+                    <Typography variant="body2" color="text.secondary">
+                      Weevils, also referred to as nunus, are beetles belonging
+                      to the superfamily Curculionoidea, known for their
+                      elongated snouts.
+                    </Typography>
+                  </CardContent>
+                </Card>
+              </Grid>
+              <Grid item xs={4}>
+                <Card sx={{}}>
+                  <CardMedia
+                    component="img"
+                    height="140"
+                    image="/imgs/earwig1.jpg"
+                    alt="green iguana"
+                  />
+                  <CardContent>
+                    <Typography gutterBottom variant="h5" component="div">
+                      weevils
+                    </Typography>
+                    <Typography variant="body2" color="text.secondary">
+                      Weevils, also referred to as nunus, are beetles belonging
+                      to the superfamily Curculionoidea, known for their
+                      elongated snouts.
+                    </Typography>
+                  </CardContent>
+                </Card>
+              </Grid>
+            </Grid>
+          </CardContent>
+        </Card>
+        {/* INSECT END */}
       </Container>
     </React.Fragment>
   );
