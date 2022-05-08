@@ -8,6 +8,7 @@ import Card from "@mui/material/Card";
 import CardActions from "@mui/material/CardActions";
 import CardContent from "@mui/material/CardContent";
 import CardMedia from "@mui/material/CardMedia";
+import { Grid } from "@mui/material";
 
 function DatasetPage() {
   return (
@@ -25,7 +26,7 @@ function DatasetPage() {
           color="text.primary"
           gutterBottom
         >
-          Some Of The Datasets
+          Dataset
         </Typography>
         <Typography
           component="div"
@@ -35,37 +36,23 @@ function DatasetPage() {
           gutterBottom
         >
           AAAAAAAAAAABBBBBBBBBBBBBBBBCCCCCCCCCCCCCCCCCC
-        </Typography> 
+        </Typography>
 
-        <Card sx={{}}>
-          <CardMedia
-            component="img"
-            height="300"            
-            image="/imgs/earwig1.jpg"
-            alt="green iguana"
-          />
-          <CardContent>Earwigs</CardContent>
-          </Card>
-          <Card sx={{}}>
-          <CardMedia
-            component="img"
-            height="300"
-            image="/imgs/weevils1.jpeg"
-            alt="green iguana"
-          />
-          <CardContent>Weevils</CardContent>
-          </Card>
-          <Card sx={{}}>
-          <CardMedia
-            component="img"
-            height="300"
-            image="/imgs/larva1.jpg"
-            alt="green iguana"
-          />
-          <CardContent>Larva</CardContent>
-          </Card>
+        <Grid container spacing={2}>
+          <Grid item xs={8}>
+            f
+          </Grid>
+          <Grid item xs={4}>
+          dd
+          </Grid>
+          <Grid item xs={4}>
+          dd
+          </Grid>
+          <Grid item xs={8}>
+           d
+          </Grid>
+        </Grid>
       </Container>
-      
     </React.Fragment>
   );
 }
