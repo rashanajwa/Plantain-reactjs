@@ -27,10 +27,20 @@ function DatasetPage() {
         >
           Some Of The Datasets
         </Typography>
+        <Typography
+          component="div"
+          variant="body1"
+          align="center"
+          color="text.primary"
+          gutterBottom
+        >
+          AAAAAAAAAAABBBBBBBBBBBBBBBBCCCCCCCCCCCCCCCCCC
+        </Typography> 
+
         <Card sx={{}}>
           <CardMedia
             component="img"
-            height="300"
+            height="300"            
             image="/imgs/earwig1.jpg"
             alt="green iguana"
           />
