@@ -11,7 +11,7 @@ export default function CNNConceptPage() {
   return (
     <Box m={2} pt={5}>
       <Container maxWidth="md" component="main" id="cnn-concept-div">
-        <Card sx={{}}>
+        <Card sx={{backgroundColor: "#f5f5dc"}}>
           <CardMedia
             component="img"
             height="300"
@@ -74,7 +74,7 @@ export default function CNNConceptPage() {
           In this, the input image from the previous layers are flattened and fed to the FC layer. The flattened vector then undergoes few more FC layers where the mathematical functions operations usually take place. In this stage, the classification process begins to take place.
           <br></br></Typography> 
           <Typography variant="h6" align="left" color="text.secondary">
-          Dropout Layer          
+          Dropout Layer           
               </Typography> 
               <Typography variant="body2" align="left" color="text.secondary">
           <br></br>

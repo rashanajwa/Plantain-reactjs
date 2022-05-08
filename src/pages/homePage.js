@@ -4,14 +4,16 @@ import Box from "@mui/material/Box";
 import Typography from "@mui/material/Typography";
 import Container from "@mui/material/Container";
 import CNNConceptPage from "./cnn-concept-page";
-import Button from "@mui/material/Button";
-import ButtonGroup from "@mui/material/ButtonGroup";
 import HomePageCard from "../components/home-page-card";
+
 import { Grid } from "@material-ui/core";
+
+
 
 function HomePage() {
   return (
     <React.Fragment>
+          
       <Container
         disableGutters
         maxWidth="sm"
@@ -61,6 +63,7 @@ function HomePage() {
           </Grid>
         </Box>
       </Container>
+      
     </React.Fragment>
   );
 }
