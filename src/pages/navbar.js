@@ -52,7 +52,7 @@ function Navbar() {
       position="fixed"
       color="default"
       elevation={24}
-      style={{ backgroundColor: "#F6F6F2" }}
+      // style={{ backgroundColor: "#F6F6F2" }}
     >
       <Toolbar sx={{ flexWrap: "wrap" }}>
         <div className="navbar-appname-dive">

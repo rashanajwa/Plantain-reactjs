@@ -32,7 +32,7 @@ const RouterList = () => {
 
 function App() {
   return (
-    <div className="App">
+    <div className="App" >
       <GlobalStyles
         styles={{ ul: { margin: 0, padding: 0, listStyle: "none" } }}
       />
