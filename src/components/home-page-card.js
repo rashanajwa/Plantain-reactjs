@@ -9,9 +9,11 @@ export default function HomePageCard(props) {
     <Card sx={{ maxWidth: 400, backgroundColor: "#d6e7d9" }}>
       <CardActionArea>
         <CardContent>
+        <div class="divbox">
           <Typography gutterBottom variant="h5" component="div">
             {props.text}
           </Typography>
+          </div>
         </CardContent>
       </CardActionArea>
     </Card>

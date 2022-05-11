@@ -59,3 +59,17 @@
     transform: rotate(360deg);
   }
 }
+
+.divline {
+  background-color:#56805b;
+  font-style: italic;
+  font-variant: small-caps;
+  text-decoration-color: black;
+  text-decoration:overline;
+  }
+
+.divbox{
+  font-variant: small-caps; 
+  
+
+}

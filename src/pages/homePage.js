@@ -20,6 +20,7 @@ function HomePage() {
         component="main"
         sx={{ pt: 8, pb: 6 }}
       >
+         <div class="divbox">
         <Typography
           component="h1"
           variant="h2"
@@ -28,17 +29,19 @@ function HomePage() {
           gutterBottom
         >
           Plantain Doctor
-        </Typography>
+        </Typography></div>
         <p>
           <br></br>
-        </p>
+        </p> 
+        <div class = "divline">
         <Typography color="text.secondary" component="p">
           We help you to detect various insects and diseases that affects
           plantain trees. we assure you to provide sufficient cure treatments
           for the infected plant.
-        </Typography>
+        </Typography></div>
       </Container>
       <Container disableGutters maxWidth="sm" component="main">
+      <div class="divbox">
         <Typography
           component="h2"
           variant="h6"
@@ -48,11 +51,12 @@ function HomePage() {
           sx={{ pt: 5, pb: 5 }}
         >
           All You Have To Do Is...
-        </Typography>
+        </Typography></div>
+        
         <Box sx={{ flexGrow: 1 }}>
           <Grid container spacing={1}>
             <Grid item xs={4} md={4}>
-              <HomePageCard text={"Navigate to Detect"} />
+           <HomePageCard text={"Navigate to Detect"} />
             </Grid>
             <Grid item xs={4} md={4}>
               <HomePageCard text={"Select a part of the Plant"} />
@@ -62,6 +66,7 @@ function HomePage() {
             </Grid>
           </Grid>
         </Box>
+        
       </Container>
       
     </React.Fragment>

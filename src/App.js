@@ -11,7 +11,6 @@ import Navbar from "./pages/navbar";
 import HomePage from "./pages/homePage";
 import CssBaseline from "@mui/material/CssBaseline";
 import GlobalStyles from "@mui/material/GlobalStyles";
-import FooterComponent from "./pages/footer";
 import CNNConceptPage from "./pages/cnn-concept-page";
 import DatasetPage from "./pages/dataset-page";
 import PlantainPage from "./pages/plantain-page";
