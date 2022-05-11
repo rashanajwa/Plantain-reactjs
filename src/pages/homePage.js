@@ -16,29 +16,31 @@ function HomePage() {
           
       <Container
         disableGutters
-        maxWidth="sm"
+        maxWidth="false"
         component="main"
-        sx={{ pt: 8, pb: 6 }}
+        sx={{ pt: 0.5, pb: 1 }}
       >
-         <div class="divbox">
+        <div class="divimg">
+          <img src="imgs\frnt.png" height="180" width="1000"></img>
+          </div>
+
+        <div class="divbox">
         <Typography
           component="h1"
           variant="h2"
-          align="center"
+          align="left"
           color="text.primary"
           gutterBottom
         >
-          Plantain Doctor
+         
         </Typography></div>
-        <p>
-          <br></br>
-        </p> 
-        <div class = "divline">
+        <br></br>
+        <div class = "divline"><marquee>
         <Typography color="text.secondary" component="p">
           We help you to detect various insects and diseases that affects
           plantain trees. we assure you to provide sufficient cure treatments
           for the infected plant.
-        </Typography></div>
+        </Typography> </marquee></div>
       </Container>
       <Container disableGutters maxWidth="sm" component="main">
       <div class="divbox">
@@ -48,7 +50,7 @@ function HomePage() {
           align="center"
           color="text.secondary"
           gutterBottom
-          sx={{ pt: 5, pb: 5 }}
+          sx={{ pt: 4, pb: 2 }}
         >
           All You Have To Do Is...
         </Typography></div>
