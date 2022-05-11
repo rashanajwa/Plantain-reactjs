@@ -41,7 +41,7 @@
   margin-top: 65px;
   /* background-color: rgb(247 247 247); */
   height: 100vh; 
-  background: linear-gradient(rgba(255,255,255,.5), rgba(255,255,255,.5)), url("../public/imgs/pic2.jpg");
+  background: linear-gradient(rgba(255,255,255,.5), rgba(255,255,255,.5)), url("../public/imgs/pic1.jpg");
   background-repeat: no-repeat;
   background-position: 50% 0;
   background-size: cover;
