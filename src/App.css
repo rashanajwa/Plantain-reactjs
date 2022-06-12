@@ -62,15 +62,17 @@
 }
 
 .divline {
-  background-color: #56805b;
+  
   font-style: italic;
-  font-variant: small-caps;
+  font-variant:normal; 
   text-decoration-color: black;
-  text-decoration: overline;
+  text-decoration:solid;
+  margin-left: 10ch;
+  margin-right: 10ch;
 }
 
 .divbox {
-  font-variant: small-caps;
+  font-variant: normal;
 }
 .view-treatment-btn {
   cursor: pointer;

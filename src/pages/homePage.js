@@ -32,13 +32,13 @@ function HomePage() {
         </div>
         <br></br>
         <div class="divline">
-          <marquee>
+          
             <Typography color="text.secondary" component="p">
-              We help you to detect various insects and diseases that affects
-              plantain trees. we assure you to provide sufficient cure
-              treatments for the infected plant.
-            </Typography>{" "}
-          </marquee>
+            The main objective of this application is to develop an application to help small-scale farmers detect diseases and pests on plantain trees.
+Pests, stems, and leaf diseases that are highly prevalent on plantains are predicted accurately by us.
+We provide the proper treatment, including pesticides, fungicides, etc., by which we could collectively create a lot of healthy plantain fields in our country.
+           </Typography>{" "}
+          
         </div>
       </Container>
       <Container disableGutters maxWidth="sm" component="main">
@@ -56,7 +56,7 @@ function HomePage() {
           </Typography>
         </div>
 
-        <Box sx={{ flexGrow: 1 }}>
+         <Box sx={{ flexGrow: 1 }}>
           {/* <Grid container spacing={1}>
             <Grid item xs={4} md={4}>
               <HomePageCard text={"Navigate to Detect"} />
@@ -99,6 +99,7 @@ function HomePage() {
             </Grid>
           </Grid>
         </Box>
+        
       </Container>
     </React.Fragment>
   );
