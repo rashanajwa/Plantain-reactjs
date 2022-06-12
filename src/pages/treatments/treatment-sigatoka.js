@@ -5,7 +5,7 @@ import Typography from "@mui/material/Typography";
 import Container from "@mui/material/Container";
 import CNNConceptPage from "../cnn-concept-page";
 
-function TreatmentFusariumWiltPage() {
+function TreatmentSigatokaPage() {
   return (
     <React.Fragment>
       <Container

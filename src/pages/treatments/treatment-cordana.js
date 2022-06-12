@@ -4,7 +4,7 @@ import Typography from "@mui/material/Typography";
 import Container from "@mui/material/Container";
 
 
-function TreatmentFusariumWiltPage() {
+function TreatmentCordanaPage() {
   return (
     <React.Fragment>
       <Container

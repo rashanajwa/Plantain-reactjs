@@ -40,7 +40,7 @@ const RouterList = () => {
     { path: "/treatment/fusarium-wilt", element: <TreatmentFusariumWiltPage />,   },
     { path: "/treatment/bacterial-wilt", element: <TreatmentBacterialWiltPage />,   },
     { path: "/treatment/cordana", element: <TreatmentCordanaPage />,   },
-    { path: "/treatment/fusarium-wilt", element: <TreatmentSigatokaPage />,   },
+    { path: "/treatment/sigatoka", element: <TreatmentSigatokaPage />,   },
   ]);
   return routes;
 };
