@@ -9,6 +9,10 @@ import CardContent from "@mui/material/CardContent";
 import { Grid } from "@material-ui/core";
 
 function HomePage() {
+  const onClickLink = (path) => {
+    window.location.href = path;
+  };
+
   return (
     <React.Fragment>
       <Container
@@ -18,7 +22,20 @@ function HomePage() {
         sx={{ pt: 0.5, pb: 1 }}
       >
         <div class="divimg">
-          <img src="imgs\loggo.jpg" height="180" width="1350"></img>
+          <img
+            src="imgs\Digital-Green_Bihar_13.jpg"
+            height="auto"
+            width="100%"
+            className="home-banner-image"
+            alt="green pic"
+          ></img>
+          <div class="centered">
+            <p>
+              Agriculture is the most healthful, most useful and most noble
+              employment of man.
+            </p>
+          </div>
+          {/* <img src="imgs\Digital-Green_Bihar_13.jpg" height="50" width="aut"></img> */}
         </div>
 
         <div class="divbox">
@@ -32,16 +49,22 @@ function HomePage() {
         </div>
         <br></br>
         <div class="divline">
-          
-            <Typography color="text.secondary" component="p">
-            The main objective of this application is to develop an application to help small-scale farmers detect diseases and pests on plantain trees.
-Pests, stems, and leaf diseases that are highly prevalent on plantains are predicted accurately by us.
-We provide the proper treatment, including pesticides, fungicides, etc., by which we could collectively create a lot of healthy plantain fields in our country.
-           </Typography>{" "}
-          
+          <Typography color="text.secondary" component="p">
+            The main objective of this application is to develop an application
+            to help small-scale farmers detect diseases and pests on plantain
+            trees. Pests, stems, and leaf diseases that are highly prevalent on
+            plantains are predicted accurately by us. We provide the proper
+            treatment, including pesticides, fungicides, etc., by which we could
+            collectively create a lot of healthy plantain fields in our country.
+          </Typography>{" "}
         </div>
       </Container>
-      <Container disableGutters maxWidth="sm" component="main">
+      <Container
+        disableGutters
+        maxWidth="sm"
+        component="main"
+        sx={{ pt: 0.5, pb: 5 }}
+      >
         <div>
           <Typography
             component="h2"
@@ -56,25 +79,18 @@ We provide the proper treatment, including pesticides, fungicides, etc., by whic
           </Typography>
         </div>
 
-         <Box sx={{ flexGrow: 1 }}>
-          {/* <Grid container spacing={1}>
-            <Grid item xs={4} md={4}>
-              <HomePageCard text={"Navigate to Detect"} />
-            </Grid>
-            <Grid item xs={4} md={4}>
-              <HomePageCard text={"Select a part of the Plant"} />
-            </Grid>
-            <Grid item xs={4} md={4}>
-              <HomePageCard text={"Drag and drop your Image"} />
-            </Grid>
-          </Grid> */}
-
+        <Box sx={{ flexGrow: 1 }}>
           <Grid container spacing={2} columns={16}>
             <Grid item xs={4}>
               <Card sx={{}}>
                 <CardContent>
-                  <Typography variant="h5" component="div">
-                    Navigate to Detect
+                  <Typography
+                    variant="h5"
+                    component="div"
+                    onClick={() => onClickLink("/detect/leaf")}
+                    className="home-nav-btn"
+                  >
+                    Detect Leaf Disease
                   </Typography>
                 </CardContent>
               </Card>
@@ -82,8 +98,13 @@ We provide the proper treatment, including pesticides, fungicides, etc., by whic
             <Grid item xs={4}>
               <Card sx={{}}>
                 <CardContent>
-                  <Typography variant="h5" component="div">
-                  Select a part of the Plant
+                  <Typography
+                    variant="h5"
+                    component="div"
+                    onClick={() => onClickLink("/detect/stem")}
+                    className="home-nav-btn"
+                  >
+                    Detect Stem Disease
                   </Typography>
                 </CardContent>
               </Card>
@@ -91,15 +112,19 @@ We provide the proper treatment, including pesticides, fungicides, etc., by whic
             <Grid item xs={4}>
               <Card sx={{}}>
                 <CardContent>
-                  <Typography variant="h5" component="div">
-                  Drag and drop your Image
+                  <Typography
+                    variant="h5"
+                    component="div"
+                    onClick={() => onClickLink("/detect/insect")}
+                    className="home-nav-btn"
+                  >
+                    Detect Insect Disease
                   </Typography>
                 </CardContent>
               </Card>
             </Grid>
           </Grid>
         </Box>
-        
       </Container>
     </React.Fragment>
   );

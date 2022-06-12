@@ -56,16 +56,13 @@ function Navbar() {
     >
       <Toolbar sx={{ flexWrap: "wrap" }}>
         <div className="navbar-appname-dive">
-          <Typography
-            variant="h6"
-            color="inherit"
-            noWrap
-            sx={{ flexGrow: 1, textAlign: "left" }}
+          <img
+            src="imgs\loggo.jpg"
+            height="50"
+            width="auto"
+            className="app-nav-icon"
             onClick={onAppNameClick}
-            className="app-title"
-          >
-            Plantain Doctor
-          </Typography>
+          ></img>
         </div>
         <nav>
           <Link variant="button" color="text.primary">

@@ -22,13 +22,10 @@ function PlantainPage() {
           className="page-main-title"
           gutterBottom
         >
-         Plantain Tree
+          Plantain Tree
         </Typography>
-        <Typography
-          color="text.secondary"
-          component="p"
-        >
-         Plantain, Musa × paradisiaca (syn. Musa sapientum) is an herbaceous
+        <Typography color="text.secondary" component="p">
+          Plantain, Musa × paradisiaca (syn. Musa sapientum) is an herbaceous
           perennial belonging to the family Musaceae. Plantains are
           distinguished from bananas by their fruit which, although
           morphologically very similar to bananas, are actually longer, firmer
@@ -56,11 +53,13 @@ function PlantainPage() {
         >
           Uses
         </Typography>
-        <Typography
-          color="text.secondary"
-          component="p"
-        >
-         Plantains are eaten as a vegetable and are cooked prior to consumption. They are an important component of many dishes in Western Africa and Caribbean countries. In addition, the leaves of Musa species can be used as a source of fibre for thread, cloth string, thread or can be used as thatch and roofing. The plants are also grown as an effective source of shade for other crops.
+        <Typography color="text.secondary" component="p">
+          Plantains are eaten as a vegetable and are cooked prior to
+          consumption. They are an important component of many dishes in Western
+          Africa and Caribbean countries. In addition, the leaves of Musa
+          species can be used as a source of fibre for thread, cloth string,
+          thread or can be used as thatch and roofing. The plants are also grown
+          as an effective source of shade for other crops.
         </Typography>
       </Container>
     </React.Fragment>
