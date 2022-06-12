@@ -12,13 +12,14 @@ function PlantainPage() {
         disableGutters
         maxWidth="sm"
         component="main"
-        sx={{ pt: 8, pb: 6 }}
+        sx={{ pt: 12, pb: 6 }}
       >
         <Typography
-          component="h1"
-          variant="h2"
+          component="h3"
+          variant="h3"
           align="center"
           color="text.primary"
+          className="page-main-title"
           gutterBottom
         >
          Plantain Tree
@@ -45,9 +46,9 @@ function PlantainPage() {
           ancestors which originated from the Malaysian peninsula, New Guinea
           and South-East Asia.
         </Typography>
-        <p><br></br><br></br></p>
+        <p></p>
         <Typography
-          component="h2"
+          component="h6"
           variant="h6"
           align="center"
           color="text.primary"

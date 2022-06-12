@@ -16,6 +16,14 @@ import DatasetPage from "./pages/dataset-page";
 import PlantainPage from "./pages/plantain-page";
 import ReferencePage from "./pages/references-page";
 import { DetectPage } from "./pages/detect-page";
+import TreatmentWeevilsPage from "./pages/treatments/treatment-weevils-page";
+import TreatmentLarvaPage from "./pages/treatments/treatment-larva-page";
+import TreatmentEarwigsPage from "./pages/treatments/treatment-earwigs-page";
+import TreatmentPestalotiopsisPage from "./pages/treatments/treatment-pestalotiopsis-page";
+import TreatmentFusariumWiltPage from "./pages/treatments/treatment-fusarium-wilt-page";
+import TreatmentBacterialWiltPage from "./pages/treatments/treatment-bacterial-wilt";
+import TreatmentCordanaPage from "./pages/treatments/treatment-cordana";
+import TreatmentSigatokaPage from "./pages/treatments/treatment-sigatoka";
 
 const RouterList = () => {
   let routes = useRoutes([
@@ -25,18 +33,26 @@ const RouterList = () => {
     { path: "/plantain", element: <PlantainPage /> },
     { path: "/references", element: <ReferencePage /> },
     { path: "/detect/:type", element: <DetectPage /> },
+    { path: "/treatment/Weevils", element: <TreatmentWeevilsPage /> },
+    { path: "/treatment/Larva", element: <TreatmentLarvaPage /> },
+    { path: "/treatment/Earwigs", element: <TreatmentEarwigsPage /> },
+    { path: "/treatment/pestalotiopsis", element: <TreatmentPestalotiopsisPage />,   },
+    { path: "/treatment/fusarium-wilt", element: <TreatmentFusariumWiltPage />,   },
+    { path: "/treatment/bacterial-wilt", element: <TreatmentBacterialWiltPage />,   },
+    { path: "/treatment/cordana", element: <TreatmentCordanaPage />,   },
+    { path: "/treatment/fusarium-wilt", element: <TreatmentSigatokaPage />,   },
   ]);
   return routes;
 };
 
 function App() {
   return (
-    <div className="App" >
+    <div className="App">
       <GlobalStyles
         styles={{ ul: { margin: 0, padding: 0, listStyle: "none" } }}
       />
       <CssBaseline />
-      <div>
+      <div className="navbar-container">
         <Navbar />
       </div>
       <div className="content-page-container">

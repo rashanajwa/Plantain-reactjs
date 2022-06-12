@@ -1,8 +1,11 @@
 .App {
   text-align: center;
   height: 100vh;
+  
 }
-
+.app-title {
+  text-transform: uppercase;
+}
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -37,15 +40,13 @@
 .MuiTypography-h6 {
   font-size: 1.7em !important;
 }
+.navbar-container {
+  background-image: linear-gradient(120deg, #e5f9b9 0%, #c3f7ca 100%);
+  height: 68px;
+}
 .content-page-container {
-  margin-top: 65px;
-  /* background-color: rgb(247 247 247); */
-  height: 100vh; 
-  background: linear-gradient(rgba(255,255,255,.5), rgba(255,255,255,.5)), url("../public/imgs/pic1.jpg");
-  background-repeat: no-repeat;
-  background-position: 50% 0;
-  background-size: cover;
-  height: 100%;
+  background-image: linear-gradient(120deg, #e5f9b9 0%, #c3f7ca 100%);
+  height: 100vh;
 }
 .nav-detect-btn {
   color: #000 !important;
@@ -61,15 +62,23 @@
 }
 
 .divline {
-  background-color:#56805b;
+  background-color: #56805b;
   font-style: italic;
   font-variant: small-caps;
   text-decoration-color: black;
-  text-decoration:overline;
-  }
+  text-decoration: overline;
+}
 
-.divbox{
-  font-variant: small-caps; 
-  
-
+.divbox {
+  font-variant: small-caps;
+}
+.view-treatment-btn {
+  cursor: pointer;
+  font-size: 0.7em;
+}
+p {
+  text-align: justify;
+}
+.page-main-title {
+  text-transform: uppercase;
 }

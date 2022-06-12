@@ -62,6 +62,7 @@ function Navbar() {
             noWrap
             sx={{ flexGrow: 1, textAlign: "left" }}
             onClick={onAppNameClick}
+            className="app-title"
           >
             Plantain Doctor
           </Typography>

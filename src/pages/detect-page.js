@@ -25,7 +25,7 @@ import {
 import { DropzoneArea } from "material-ui-dropzone";
 import { common } from "@material-ui/core/colors";
 import Clear from "@material-ui/icons/Clear";
-import { useParams } from "react-router-dom";
+import { useParams, useNavigate } from "react-router-dom";
 
 const ColorButton = withStyles((theme) => ({
   root: {
@@ -159,16 +159,17 @@ export const DetectPage = () => {
   const [image, setImage] = useState(false);
   const [isLoading, setIsloading] = useState(false);
   let { type } = useParams();
+  const navigate = useNavigate();
   let confidence = 0;
 
   const sendFile = async () => {
     if (image) {
       let formData = new FormData();
-      formData.append("file", selectedFile); 
+      formData.append("file", selectedFile);
       let res = await axios({
         method: "post",
         // url: "https://3a3f-117-254-183-71.in.ngrok.io/predict",
-        url: `http://localhost:8000/predict?type=${type}` ,
+        url: `http://localhost:8000/predict?type=${type}`,
         data: formData,
       });
       if (res.status === 200) {
@@ -212,6 +213,29 @@ export const DetectPage = () => {
     setSelectedFile(files[0]);
     setData(undefined);
     setImage(true);
+  };
+
+  const onClickViewTreatment = () => {
+    switch (data.class) {
+      case "pestalotiopsis": {
+        navigate("/treatment/pestalotiopsis");
+        return;
+      }
+      case "Weevils": {
+        navigate("/treatment/Weevils");
+        return;
+      }
+      case "Larva": {
+        navigate("/treatment/Larva");
+        return;
+      }
+      case "Earwigs": {
+        navigate("/treatment/Earwigs");
+        return;
+      }
+      default:
+        return;
+    }
   };
 
   if (data) {
@@ -277,9 +301,7 @@ export const DetectPage = () => {
                           <TableCell
                             align="right"
                             className={classes.tableCell1}
-                          >
-                            Confidence:
-                          </TableCell>
+                          ></TableCell>
                         </TableRow>
                       </TableHead>
                       <TableBody className={classes.tableBody}>
@@ -295,7 +317,18 @@ export const DetectPage = () => {
                             align="right"
                             className={classes.tableCell}
                           >
-                            {confidence}%
+                            <Typography
+                              component="string"
+                              variant="string"
+                              align="center"
+                              color="text.primary"
+                              className="view-treatment-btn"
+                              onClick={() => {
+                                onClickViewTreatment();
+                              }}
+                            >
+                              View Treatment
+                            </Typography>
                           </TableCell>
                         </TableRow>
                       </TableBody>
