@@ -7,11 +7,11 @@ import Container from "@mui/material/Container";
 function TreatmentBacterialWiltPage() {
   return (
     <React.Fragment>
-      <Container
+       <Container
         disableGutters
         maxWidth="sm"
         component="main"
-        sx={{ pt: 4, pb: 6 }}
+        sx={{ pt: 12, pb: 6 }}
       >
         <div className="page-main-title">
           <h1> Treatment: Bacterial Wilt</h1>

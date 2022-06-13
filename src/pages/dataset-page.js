@@ -66,7 +66,7 @@ function DatasetPage() {
                       variant="body2"
                       component="p"
                       color="text.secondary"
-                      className="dataset-cat-card-paragraph"
+                      className="dataset-cat-card-paragraph-pests"
                     >
                       {` Cosmopolites sordidus, commonly known as the banana root
                       borer, banana borer, or banana weevil, is a species of
@@ -74,8 +74,8 @@ function DatasetPage() {
                       cultivation and has a cosmopolitan distribution, being
                       found in all parts of the world in which bananas are grown`}
                     </Typography>
-                    <Button href="" className="view-more-btn">
-                      View more
+                    <Button href="https://drive.google.com/drive/folders/13mBKNDVBsk3LultKkbmCprOKwpLdqEbw?usp=sharing" target="_blank" className="view-more-btn">
+                      View more photos
                     </Button>
                   </CardContent>
                 </Card>
@@ -95,7 +95,7 @@ function DatasetPage() {
                     <Typography
                       variant="body2"
                       color="text.secondary"
-                      className="dataset-cat-card-paragraph"
+                      className="dataset-cat-card-paragraph-pests"
                     >
                       {` The black banana weevil (or the banana root borer)
                       Cosmopolites sordidus is one of the most serious insect
@@ -104,8 +104,8 @@ function DatasetPage() {
                       or rhizomes are used for propagation and eggs and larvae
                       are easily transported therein.`}
                     </Typography>{" "}
-                    <Button href="" className="view-more-btn">
-                      View more
+                    <Button href="https://drive.google.com/drive/folders/19YPuuIGGTMdYRXeaZsavkcjFMQq_MGCX?usp=sharing" target="_blank" className="view-more-btn">
+                      View more photos
                     </Button>
                   </CardContent>
                 </Card>
@@ -125,7 +125,7 @@ function DatasetPage() {
                     <Typography
                       variant="body2"
                       color="text.secondary"
-                      className="dataset-cat-card-paragraph"
+                      className="dataset-cat-card-paragraph-pests"
                     >
                       {`    Earwigs are mostly nocturnal and often hide in small,
                       moist crevices during the day, and are active at night,
@@ -134,8 +134,8 @@ function DatasetPage() {
                       earwigs, especially the common earwig Forficula
                       auricularia. `}
                     </Typography>{" "}
-                    <Button href="" className="view-more-btn">
-                      View more
+                    <Button href="https://drive.google.com/drive/folders/1bFHGMpja_RxmgMQW_OHQrLdIWX7KMMI5?usp=sharing" target="_blank" className="view-more-btn">
+                      View more photos
                     </Button>
                   </CardContent>
                 </Card>
@@ -175,7 +175,7 @@ function DatasetPage() {
                     <Typography
                       variant="body2"
                       color="text.secondary"
-                      className="dataset-cat-card-paragraph"
+                      className="dataset-cat-card-paragraph-stem"
                     >
                       {`Fusarium wilt of banana, popularly known as Panama
                       disease, is a lethal fungal disease caused by the
@@ -183,8 +183,8 @@ function DatasetPage() {
                       It is the first disease of bananas to have spread globally
                       in the first half of the 20th century `}
                     </Typography>{" "}
-                    <Button href="" className="view-more-btn">
-                      View more
+                    <Button href="https://drive.google.com/drive/folders/1nqf6FTfbM7Z9l5JTv61SKQVuAJ6DS4eU?usp=sharing"  target="_blank" className="view-more-btn">
+                      View more photos
                     </Button>
                   </CardContent>
                 </Card>
@@ -204,15 +204,15 @@ function DatasetPage() {
                     <Typography
                       variant="body2"
                       color="text.secondary"
-                      className="dataset-cat-card-paragraph"
+                      className="dataset-cat-card-paragraph-stem"
                     >
                       {` This is a class of healthy stem which is not yet effected
                       by any pests or diseases. It could be maintained properly
                       with proper precautions for the healthy well being of the
                       plantain trees. `}
                     </Typography>{" "}
-                    <Button href="" className="view-more-btn">
-                      View more
+                    <Button href="https://drive.google.com/drive/folders/19b7KJZ64FnndFxVHkeC2Qk9lCDCvPfD2?usp=sharing"  target="_blank" className="view-more-btn">
+                      View more photos
                     </Button>
                   </CardContent>
                 </Card>
@@ -264,8 +264,8 @@ function DatasetPage() {
                       means by which the disease is transmitted by insects and
                       cutting tools that have come in contact with it `}
                     </Typography>{" "}
-                    <Button href="" className="view-more-btn">
-                      View more
+                    <Button href="https://drive.google.com/drive/folders/19yVXKVxyLOdRdzdcUaKCF6Xr7fYfZ7__?usp=sharing"  target="_blank" className="view-more-btn">
+                      View more photos
                     </Button>
                   </CardContent>
                 </Card>
@@ -293,8 +293,8 @@ function DatasetPage() {
                       often found as secondary invaders of leaf lesions caused
                       by other fungi. `}
                     </Typography>{" "}
-                    <Button href="" className="view-more-btn">
-                      View more
+                    <Button href="https://drive.google.com/drive/folders/1E4ANyHt59pyAPqJ26OqOnsafvNCfMNHR?usp=sharing"  target="_blank" className="view-more-btn">
+                      View more photos
                     </Button>
                   </CardContent>
                 </Card>
@@ -329,8 +329,8 @@ function DatasetPage() {
                       infects mature banana leaves and will continue to cause
                       infection without proper control `}
                     </Typography>{" "}
-                    <Button href="" className="view-more-btn">
-                      View more
+                    <Button href="https://drive.google.com/drive/folders/1gk3eTLpj1jmlbTjGloV1Bmp88DrlG6FJ?usp=sharing"  target="_blank" className="view-more-btn">
+                      View more photos
                     </Button>
                   </CardContent>
                 </Card>
@@ -355,8 +355,8 @@ function DatasetPage() {
                       {`   Pestalotiopsis leprogena is a fungal plant pathogen
                       infecting bananas. `}
                     </Typography>{" "}
-                    <Button href="" className="view-more-btn">
-                      View more
+                    <Button href="https://drive.google.com/drive/folders/1fpfAYnFj16h24zVaXdjV_WAFWst0TmVY?usp=sharing"  target="_blank" className="view-more-btn">
+                      View more photos
                     </Button>
                   </CardContent>
                 </Card>
@@ -381,8 +381,8 @@ function DatasetPage() {
                       {`Healthy leaves which includes banana leaves that are not
                       affected by any of the diseases. `}
                     </Typography>{" "}
-                    <Button href="" className="view-more-btn">
-                      View more
+                    <Button href="https://drive.google.com/drive/folders/1jvHe8Jl-go8CiJpg3P2Ds-xUJax5d8yg?usp=sharing"  target="_blank" className="view-more-btn">
+                      View more photos
                     </Button>
                   </CardContent>
                 </Card>

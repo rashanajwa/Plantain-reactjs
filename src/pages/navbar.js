@@ -57,7 +57,7 @@ function Navbar() {
       <Toolbar sx={{ flexWrap: "wrap" }}>
         <div className="navbar-appname-dive">
           <img
-            src="imgs\loggo.jpg"
+            src="/imgs/loggo.jpg"
             height="50"
             width="auto"
             className="app-nav-icon"
@@ -143,18 +143,16 @@ function Navbar() {
           >
             Dataset
           </Link>
-          <Link
+          {/* <Link
             variant="button"
             color="text.primary"
             href="/references"
             sx={{ my: 1, mx: 1.5 }}
           >
             References
-          </Link>
+          </Link> */}
         </nav>
-        {/* <Button href="#" variant="outlined" sx={{ my: 1, mx: 1.5 }}>
-          Login
-        </Button> */}
+        
       </Toolbar>
     </AppBar>
   );

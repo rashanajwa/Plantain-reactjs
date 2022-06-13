@@ -31,8 +31,10 @@ function HomePage() {
           ></img>
           <div class="centered">
             <p>
-              Agriculture is the most healthful, most useful and most noble
-              employment of man.
+             <i> {`"Agriculture is the most healthful, most useful and most noble
+              employment of man."`}</i>
+              <br/>
+              <i style={{fontSize:"0.6em"}}>~George Washington</i>
             </p>
           </div>
           {/* <img src="imgs\Digital-Green_Bihar_13.jpg" height="50" width="aut"></img> */}
@@ -65,7 +67,7 @@ function HomePage() {
         component="main"
         sx={{ pt: 0.5, pb: 5 }}
       >
-        <div>
+        {/* <div>
           <Typography
             component="h2"
             variant="h6"
@@ -77,12 +79,12 @@ function HomePage() {
           >
             All You Have To Do Is...
           </Typography>
-        </div>
+        </div> */}
 
         <Box sx={{ flexGrow: 1 }}>
           <Grid container spacing={2} columns={16}>
             <Grid item xs={4}>
-              <Card sx={{}}>
+              <Card sx={{}} className="home-bottom-card">
                 <CardContent>
                   <Typography
                     variant="h5"
@@ -96,7 +98,7 @@ function HomePage() {
               </Card>
             </Grid>
             <Grid item xs={4}>
-              <Card sx={{}}>
+              <Card sx={{}} className="home-bottom-card">
                 <CardContent>
                   <Typography
                     variant="h5"
@@ -110,7 +112,7 @@ function HomePage() {
               </Card>
             </Grid>
             <Grid item xs={4}>
-              <Card sx={{}}>
+              <Card sx={{}} className="home-bottom-card">
                 <CardContent>
                   <Typography
                     variant="h5"

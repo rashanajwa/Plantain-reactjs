@@ -12,7 +12,7 @@ function TreatmentFusariumWiltPage() {
         disableGutters
         maxWidth="sm"
         component="main"
-        sx={{ pt: 4, pb: 6 }}
+        sx={{ pt: 12, pb: 6 }}
       >
         <div className="page-main-title">
           <h1> Treatment: Fusarium Wilt</h1>
