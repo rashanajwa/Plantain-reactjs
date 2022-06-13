@@ -217,8 +217,8 @@ export const DetectPage = () => {
 
   const onClickViewTreatment = () => {
     switch (data.class) {
-      case "pestalotiopsis": {
-        navigate("/treatment/pestalotiopsis");
+      case "Pestalotiopsis": {
+        navigate("/treatment/Pestalotiopsis");
         return;
       }
       case "Weevils": {
@@ -231,6 +231,22 @@ export const DetectPage = () => {
       }
       case "Earwigs": {
         navigate("/treatment/Earwigs");
+        return;
+      }
+      case "Fusarium wilt": {
+        navigate("/treatment/Fusarium-wilt");
+        return;
+      }
+      case "Bacterial wilt": {
+        navigate("/treatment/Bacterial-wilt");
+        return;
+      }
+      case "Cordana": {
+        navigate("/treatment/Cordana");
+        return;
+      }
+      case "Sigatoka": {
+        navigate("/treatment/Sigatoka");
         return;
       }
       default:
