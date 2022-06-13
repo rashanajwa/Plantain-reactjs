@@ -3,7 +3,6 @@ import "../../App.css";
 import Typography from "@mui/material/Typography";
 import Container from "@mui/material/Container";
 
-
 function TreatmentCordanaPage() {
   return (
     <React.Fragment>
@@ -22,15 +21,29 @@ function TreatmentCordanaPage() {
           align="left"
           margin={1}
         >
-         Plant resistant varieties when available.
-Remove stricken growth from the garden and sterilize pruning clippers (one part bleach to 4 parts water) between cuts.
-Use Safer® Yard & Garden Insect Killer to control many garden insects, like cucumber beetles, which are known to spread the disease.
-High nitrogen fertilizers may increase susceptibility to the disease. Test your soil and use a slow-release, organic fertilizer in the vegetable garden.
-Hand pull or spot treat weeds using a weed flamer or natural herbicide — many weed species host the disease pathogen.
-Mycostop is a biological fungicide that will safely protect crops against wilt caused by Fusarium. Approved for use in organic crop production, it can be applied as a soil spray or drench (1-2 gm/ 100 sq ft) to seedlings, ornamentals and vegetables. Apply sufficient water during application to move Mycostop into the root zone.
-If the disease persists, it is best to remove the entire plant and solarize* the soil before planting again.
+          <ul>
+            <li>
+              • Use field tolerant cultivars such as Seeni (Embul and Kolikuttu
+              are susceptible so do not use these)
+            </li>
+            <li>• Use proper spacing in order to avoid mutual shading and contact of
+            leaves (8x8 to 12x12 ft2) </li><li>• Make sure that new plantations are an
+            appropriate distance from existing disease affected plantations</li><li> •
+            Avoid sprinkler irrigation to minimize the relative humidity of the
+            microenvironment. Drip irrigation is preferred. </li><li>• Balanced
+            fertilization (avoid excess N fertilizer) </li><li>• Avoid high density
+            planting methods for highly susceptible cultivars and high risk
+            areas such as some areas of Down South in Dry Zone. </li><li>• Remove
+            infected leaves and burn them </li><li>• Practice field sanitation by
+            removing old dried hanging leaves</li><li> • If the fourth leaf from the
+            bottom is infected, chemical control measures should be applied.
+            Alternate sprays of a contact fungicide, e.g. chlorothalonil 500g/l
+            SC (30ml/ 10l) or mancozeb 75% WG (20g/ 10l) and a systemic
+            fungicide, e.g. Tebuconazole 250g/l EW (3.5 ml/10l) or Propiconazole
+            250g/l EC (3.5 ml/ 10l). Make sure the spray reaches the top of the
+            leaves</li>
+          </ul>
         </Typography>
-        
       </Container>
     </React.Fragment>
   );

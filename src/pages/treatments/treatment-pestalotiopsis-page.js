@@ -24,24 +24,9 @@ function TreatmentPestalotiopsisPage() {
           align="left"
           margin={1}
         >
-          <b>Biopesticides and physical methods</b> <br></br>
-          Neem (Azadirachta indica)<br></br>
-          Applications of neem powder effectively controlled weevils and
-          nematodes in on-farm trials and in farmer's fields in Kenya.
-          Application of 60 to 100 g of neem seed powder or neem cake at
-          planting and then at 4 months intervals significantly diminished pest
-          damage and increased yields. Application of over 100 g or neem oil was
-          phytotoxic (harmful to plants) and uneconomical.
-          <br></br>
-          Neem applications were economical in fertile soils with moderate pest
-          infestation. Neem applications to banana plants grown in poor soil and
-          under very high pest attack were uneconomical. A combination of
-          application of cow dung and neem treatments resulted in yield
-          increases of 50 to 75% (Musabyimana, 1999). Dipping suckers in a 20%
-          neem seed solution at planting protects the young suckers from weevil
-          attack by reducing egg laying through its repellent effect on adult
-          weevils. Egg hatching rates may also be lowered in neem-treated plants
-          (Gold and Messiaen, 2000).
+          
+Management is to prune out killed foliage and if necessary the twigs as soon as possible in the spring. Reduce winter injury by minimizing dehydration. Do not allow snow to accumulate or remain up and around the base of the plant for any length of time - especially during melting. Avoid over crowding the plants to allow sufficient sunlight and air circulation.
+
         </Typography>
         <p>
           <br></br>
